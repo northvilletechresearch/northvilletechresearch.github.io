@@ -1,0 +1,11 @@
+body {
+	background:-webkit-linear-gradient(90deg, rgba(119,201,212,1) 0%, rgba(87,188,144,1) 50%, rgba(1,82,73,1) 100%);
+background:-o-linear-gradient(90deg, rgba(119,201,212,1) 0%, rgba(87,188,144,1) 50%, rgba(1,82,73,1) 100%);
+background:-moz-linear-gradient(90deg, rgba(119,201,212,1) 0%, rgba(87,188,144,1) 50%, rgba(1,82,73,1) 100%);
+background:linear-gradient(90deg, rgba(119,201,212,1) 0%, rgba(87,188,144,1) 50%, rgba(1,82,73,1) 100%);
+}
+.ntrr > h1 {color: #ffffff; font-size: 100px; line-height: 1.5; font-family: 'VT323', monospace;}
+.ntrr > h2 {color: #ffffff; font-size: 60; line-height: 1.5; font-family: 'VT323', monospace;}
+.ntrr > a {color: #ffffff; font-size: 100px; line-height: 1.5; font-family: 'VT323', monospace;}
+.nttr > a:hover {color: #a5a5af;}
+.ntrr {	padding: 5%;}
