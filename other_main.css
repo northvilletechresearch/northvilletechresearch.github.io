@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css?family=Inconsolata|VT323');
+
+
+
+body 
+{
+  background-color: #262626;
+  font-family: 'Inconsolata', monospace;
+  font-size: 15px;
+}
+
+h5
+{
+  font-family: 'Inconsolata', monospace;
+  font-size: 40px;
+  color: #ffffff;
+}
+h5 > sup
+{
+  font-family: 'VT323', monospace;
+  font-size: 30px;
+  color: #ffffff;
+}
+
+
+.ntrr > h1 {color: #ffffff; font-size: 100px; line-height: 1.5; font-family: 'VT323', monospace;}
+.ntrr > h2 {color: #ffffff; font-size: 60; line-height: 1.5; font-family: 'VT323', monospace;}
+.ntrr > a {color: #ffffff; font-size: 100px; line-height: 1.5; font-family: 'VT323', monospace;}
+.nttr > a:hover {color: #a5a5af;}
+.ntrr {	padding: 5%;}
+
+	.jumbotron{
+		background-color: transparent;
+	}
+
+	.masthead {
+  		text-align: center;
+  		font-family: 'Work Sans'
+	}
+
+	.btn {
+  		/* eventually put this in the bootstrap sourcecode */
+  		width: 200px;
+  		height: 200px;
+  		padding: 10px 10px;
+  		font-size: 24px;
+  		line-height: 1.33;
+  		border: 0px;
+  		opacity: .70;
+  		background-color: #464646;
+      margin-top: 2%;
+      margin-bottom: 2%;
+	}
+
+  /* <span> <h5><ntr<sup>2/></sup></h5> </span> */
