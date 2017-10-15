@@ -9,12 +9,40 @@ body
   font-size: 15px;
 }
 
-h5
-{
+/*FOR TITLES ON PAGES*/
+h1{
+  font-family: 'VT323', monospace;
+  font-size: 60px;
+  color: #2b2b2b;
+}
+h2{
   font-family: 'Inconsolata', monospace;
+  font-size: 50px;
+  color: #2b2b2b;
+}
+/*FOR TEXT IN CARDS*/
+h3{
+  font-family: 'VT323', monospace;
   font-size: 40px;
   color: #ffffff;
 }
+h4{
+  font-family: 'Inconsolata', monospace;
+  font-size: 30px;
+  color: #ffffff;
+}
+/*FOR TEXT ON PAGES*/
+h5{
+  font-family: 'VT323', monospace;
+  font-size: 25px;
+  color: #2b2b2b;
+}
+h6{
+  font-family: 'Inconsolata', monospace;
+  font-size: 15px;
+  color: #2b2b2b;
+}
+
 h5 > sup
 {
   font-family: 'VT323', monospace;
@@ -23,19 +51,8 @@ h5 > sup
 }
 
 
-.ntrr > h1 {color: #ffffff; font-size: 100px; line-height: 1.5; font-family: 'VT323', monospace;}
-.ntrr > h2 {color: #ffffff; font-size: 60; line-height: 1.5; font-family: 'VT323', monospace;}
-.ntrr > a {color: #ffffff; font-size: 100px; line-height: 1.5; font-family: 'VT323', monospace;}
-.nttr > a:hover {color: #a5a5af;}
-.ntrr {	padding: 5%;}
-
 	.jumbotron{
 		background-color: transparent;
-	}
-
-	.masthead {
-  		text-align: center;
-  		font-family: 'Work Sans'
 	}
 
 	.btn {
@@ -53,19 +70,5 @@ h5 > sup
 	}
 
 
-    .navbar{
-      background-color: #2b2b2b;
-      font-family: 'Inconsolata', monospace;
-      border:0;
-      margin-bottom: 0;
-      font-size: 15px !important;
-    }
-    .navbar li a, .navbar .navbar-brand { color: #ffffff !important; }
-    .navbar-nav li a:hover { color: #4b4b4b !important }
-    .navbar-nav li.active a {color: #4b4b4b !important; background-color: #ffffff !important;}
-    .navbar-default .navbar-toggle { border-color:#4b4b4b !important; }
-    .open .dropdown-toggle {color: #4b4b4b !important; background-color: #2b2b2b !important;}
-    .dropdown-menu li a { background-color: #ffffff !important; color: #2b2b2b !important;}
-    .dropdown-menu { background-color:#ffffff !important;}
-  /* <span> <h5><ntr<sup>2/></sup></h5> </span> */
+  /* <span> <h4><ntr<sup>2/></sup></h4> </span> */
   /* #ff9812 - #2b2b2b, #000000 - #ffffff, #696969 - #4b4b4b
