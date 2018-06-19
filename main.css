@@ -1,26 +1,84 @@
-body {
-	background:-webkit-linear-gradient(90deg, rgba(119,201,212,1) 0%, rgba(87,188,144,1) 50%, rgba(1,82,73,1) 100%);
-background:-o-linear-gradient(90deg, rgba(119,201,212,1) 0%, rgba(87,188,144,1) 50%, rgba(1,82,73,1) 100%);
-background:-moz-linear-gradient(90deg, rgba(119,201,212,1) 0%, rgba(87,188,144,1) 50%, rgba(1,82,73,1) 100%);
-background:linear-gradient(90deg, rgba(119,201,212,1) 0%, rgba(87,188,144,1) 50%, rgba(1,82,73,1) 100%);
-}
-.ntrr > h1 {color: #ffffff; font-size: 100px; line-height: 1.5; font-family: 'VT323', monospace;}
-.ntrr > h2 {color: #ffffff; font-size: 60; line-height: 1.5; font-family: 'VT323', monospace;}
-.ntrr > a {color: #ffffff; font-size: 100px; line-height: 1.5; font-family: 'VT323', monospace;}
-.nttr > a:hover {color: #a5a5af;}
-.ntrr {	padding: 5%;}
+@import url('https://fonts.googleapis.com/css?family=Inconsolata|VT323');
 
-@font-family {
-  		font-family: 'Work Sans', sans-serif;
-	}
+.alert-dark {background: linear-gradient(to right, #000000, #434343); border-color: #000000; border-width: 2px;}
+.alert-dark h1 {font-family: 'VT323'; font-size: 70px; color: #ffffff}
+
+.card-article { background-repeat: no-repeat; background-size: cover; margin-bottom: 5%}
+.card-article:hover h1 {font-family: 'VT323'; font-size: 50px; color: #e1e1e1}
+.card-article h1 {font-family: 'VT323'; font-size: 50px; color: #ffffff}
+.card-article:hover h2 {font-family: 'Inconsolata'; font-size: 20px; color: #e1e1e1}
+.card-article h2 {font-family: 'Inconsolata'; font-size: 20px; color: #ffffff}
+.card-article:hover hr {border: 1.5px solid #e1e1e1;}
+.card-article hr {border: 1.5px solid #ffffff;}
+.card-article {border: 1.5px solid #ffffff;}
+.card-article:hover p {font-family: 'Inconsolata'; font-size: 15px; color: #d1d1d1}
+.card-article p {font-family: 'Inconsolata'; font-size: 15px; color: #ffffff}
+
+.card-home { background-color: transparent; border-width: 0px; padding: 5% 0%;}
+.card-home h1 { font-family: 'VT323'; font-size: 10px; color: transparent; }
+.card-home i {color: #ffffff; font-size: 5em}
+.card-home hr {border: 1.5px solid transparent;}
+.card-home:hover { background-color: #ffffff; border-width: 2px; border-color: #000000 padding: 5%;}
+.card-home:hover h1 { font-family: 'VT323'; font-size: 10px; color: #000000; }
+.card-home:hover i {color: #000000; font-size: 5em}
+.card-home:hover hr {border: 1.5px solid #000000;}
+
+
+
+a {font-family: 'VT323', monospace; color: #ffffff;}
+a:hover {color: #e1e1e1; text-decoration: none;}
+
+body 
+{
+  background-color: #ffffff;
+  font-family: 'Inconsolata', monospace;
+  font-size: 15px;
+}
+
+/*FOR TITLES ON PAGES*/
+h1{
+  font-family: 'VT323', monospace;
+  font-size: 60px;
+  color: #2b2b2b;
+}
+h2{
+  font-family: 'Inconsolata', monospace;
+  font-size: 50px;
+  color: #2b2b2b;
+}
+/*FOR TEXT IN CARDS*/
+h3{
+  font-family: 'VT323', monospace;
+  font-size: 40px;
+  color: #ffffff;
+}
+h4{
+  font-family: 'Inconsolata', monospace;
+  font-size: 30px;
+  color: #ffffff;
+}
+/*FOR TEXT ON PAGES*/
+h5{
+  font-family: 'VT323', monospace;
+  font-size: 25px;
+  color: #2b2b2b;
+}
+h6{
+  font-family: 'Inconsolata', monospace;
+  font-size: 20px;
+  color: #2b2b2b;
+}
+
+h5 > sup
+{
+  font-family: 'VT323', monospace;
+  font-size: 20px;
+  color: #2b2b2b;
+}
+
 
 	.jumbotron{
 		background-color: transparent;
-	}
-
-	.masthead {
-  		text-align: center;
-  		font-family: 'Work Sans'
 	}
 
 	.btn {
@@ -31,6 +89,12 @@ background:linear-gradient(90deg, rgba(119,201,212,1) 0%, rgba(87,188,144,1) 50%
   		font-size: 24px;
   		line-height: 1.33;
   		border: 0px;
-  		opacity: .50;
-  		background-color: #2b2b2b;
+  		opacity: .70;
+  		background-color: #464646;
+      margin-top: 2%;
+      margin-bottom: 2%;
 	}
+
+
+  /* <span> <h4><ntr<sup>2/></sup></h4> </span> */
+  /* #ff9812 - #2b2b2b, #000000 - #ffffff, #696969 - #4b4b4b
