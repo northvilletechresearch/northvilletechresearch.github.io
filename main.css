@@ -2,7 +2,7 @@
 
 .alert-dark {background: linear-gradient(to right, #000000, #434343); border-color: #000000; border-width: 2px;}
 .alert-dark h1 {font-family: 'VT323'; font-size: 300%; color: #ffffff}
-.alert-dark p {font-family: 'Inconsolata'; font-size: 100%; color: #ffffff; line-height: 15px;}
+.alert-dark p {font-family: 'Inconsolata'; font-size: 101%; color: #ffffff; line-height: 15px;}
 
 .card-article { background-repeat: no-repeat; background-size: cover; margin-bottom: 5%}
 .card-article:hover h1 {font-family: 'VT323'; font-size: 50px; color: #e1e1e1}
