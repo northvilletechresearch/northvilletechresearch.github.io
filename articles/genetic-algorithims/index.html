@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>NTRR | GENETIC ALGORITHIMS</title>
+    <meta name="description" content="GENETIC ALGORITHIMS"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!--BOOTSTRAP CDN'S-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+
+    <!--Font Awesome CDN-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../../main.css"/>
+
+  </head>
+  
+  <body>
+    <!--NAVBAR-->
+        <nav class="navbar fixed-top navbar-expand-md navbar-dark" style="background-color: #2b2b2b;">
+          <a class="navbar-brand" href="main.html">
+            <img src="../../images/logo.svg" width="30" height="30" alt="NTRR">
+          </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="myNav">
+          <div class="navbar-nav ml-auto">
+            <a class="nav-item nav-link" href="../../index.html">HOME</a>
+            <a class="nav-item nav-link" href="../../about-us/index.html">ABOUT US</a>
+            <a class="nav-item nav-link" href="../../articles/index.html">ARTICLES</a>
+            <a class="nav-item nav-link" href="../../apply/index.html">APPLY</a>
+          </div>
+        </div>
+      </nav>
+      <br><br><br><br>
+	  <!-- ARTICLE -->
+      <div class = "container">
+        <div class = "row mb-2">
+          <div class = "offset-1 col-10">
+            <div class = "alert alert-dark text-center">
+                <h1>GENETIC ALGORITHIM</h1>
+                <p>written by salil nadkarni, 02.15.18</p>
+            </div>
+          </div>          
+        </div>
+		<div style = "text-align: center">
+			<h6 style = "color: #1b1b1b"><b>&lt;?start_article&gt;</b></h6>
+		</div>
+        <div class = "row article ml-2 mr-2">
+          <p><b>GENETIC ALGORITHMS</b> sound like they have more to do with biology than software. Like the name suggest, genetic algorithms are designed after biological concepts, specifically Charles Darwin’s theory of natural selection - the way in which genetically unique offsprings are created through reproduction and how the most fit individuals survive from year to year.</p>
+        </div>
+        <div class = "row article ml-2 mr-2">
+          <p>The premise is simple. For any given problem, a number of <b>genes</b>, or solutions, are generated randomly. These genes are grouped into a <b>generation</b>. Each gene is evaluated using a <b>fitness function</b>, which spits a numerical “fitness” value (usually between 0 and 1) that represents how good a solution is, or how close a solution is to the desired answer. The most fit in each generation and these genes (usually in pairs) are <b>crossed over</b> to form <b>offsprings</b>, which form the next generation. This is iterated over multiple generations until some end condition is met, usually until a gene in the generation reaches a satisfactory fitness.</p>
+        </div>
+        <div class = "row text-center mt-2 mb-2">
+          <img class = "img-fluid mx-auto" src="one.jpg">
+        </div>
+    		<div class = "row article ml-2 mr-2">
+    			<p>Simply looking at this class of algorithms, it can seem like magic. The algorithm reaches a solution from a bunch of random guesses. The pieces that let this algorithm work are the genetic operators and the fitness function. Almost all the other parts of a genetic algorithm can be copied and pasted, but for each new problem a new fitness function must be evaluated and the genetic operators must be tweaked.</p>
+    		</div>
+    		<div class = "row article ml-2 mr-2">
+    			<p>The fitness function is one of the hardest parts of creating a genetic algorithm. Its purpose, to determine how “correct” an answer is varies from problem to problem. For some questions, the function is easier to define than others. Say a genetic algorithm is created to create the string “the answer”, and each gene is a 10 character long string of randomly generated text, like “th30dj@3/” or “$* rnj=1+K”. The fitness function in this case could simply add 1 if the character matches the one in “the answer”, and add if the character doesn’t match, and divide the final sum by 10 (so that the fitness is between 1 and 0). Below is an example of pseudocode:</p>
+    		</div>
+        <div class = "row text-center mt-2 mb-2">
+          <img class = "img-fluid mx-auto" src="two.jpg">
+        </div>
+    		<div class = "row article ml-2 mr-2">
+    			<p>According to this fitness function, both “th30dj@3/” and “$* rnj=1+K” have fitness of 0.2, because “th30dj@3/” shares the first two letters with “the answer” while “$*j rn=1+K” shares a space and an n with “the answer”. While this problem has a fitness function that is somewhat easy to define, others require significantly more thought. For example, given the price, square footage, location, and features of a house, could you determine its “fitness” for a buyer? The process would likely be much more lengthy, and since the fitness function can evaluate thousands if not millions of times for one problem, this fitness function can severely slow how quickly a genetic algorithm can operate.</p>
+    		</div>
+    		<div class = "row article ml-2 mr-2">
+    			<p>The second thing that pushed forward are the <b>genetic operators</b> used to create a new generation. The purpose of the genetic operators is twofold: create a population of genes that are fitter than the previous generation and create a population of genes that is diverse (no 2 genes are too alike). The first objective is somewhat obvious, but the second is less so. The reason we want a genetically diverse population is to prevent all the genes on settling to a solution that is close but not correct. If that happens, and all the genes are the same, the next generation is going to be too identical, and the overall fitness will stagnate.</p>
+    		</div>
+    		<div class = "row article ml-2 mr-2">
+    			<p>This avoided in two main ways. The first is through the crossover method. The crossover method is a method that takes two genes and creates a hybrid of the two. In the previous example, the crossover method might have taken the first half of one gene (th30dj@3/) and the second half of the other gene ($* rnj=1+K), and combine them (th30dj=1+K). You can increase genetic diversity in by including a wider range of genes from differing fitness level, but by doing this, you decrease the overall fitness of your next generation. Another way to increase diversity is through <b>mutation</b>, or taking a gene and randomly changing one of its components (changing th30dj=1+K to th30dj=L+K). There are other genetic operators, like <b>regrouping, colonization-extinction</b>, or <b>migration</b>, but they all act to increase genetic diversity at the exchange. Tuning these operators is a balancing act: use them sparingly and you prematurely converge to an optimal solution, use them to intensely and time to find an optimal solution increases.</p>
+    		</div>
+    		<div class = "row article ml-2 mr-2">
+    			<p>But looking into how you can affect a genetic algorithm raises an interesting issue, and that is having multiple “solutions” that you can converge upon. The genetic algorithm is doesn’t always give you the most optimal option, as revealed by the phenomenon of “genetic drift” (having a undiverse generation). That is because genetic algorithms are <b>heuristic</b> algorithms - they give approximate solutions. And that limits the use cases of the algorithm. On top of that, we have the aforementioned issue of computing power: depending on the generation size and the complexity of the fitness functions, genetic algorithms can take days to converge on one solution. So when is it useful to use a genetic algorithm?</p>
+    		</div>
+    		<div class = "row article ml-2 mr-2">
+    		`	<p>In general, they can be used wherever the “best” solution can be clearly defined and approximations are sufficient. This is useful in things like scheduling or engineering design. It's even been used and reinterpreted in machine learning algorithms. This powerful algorithm is as simple as it is useful, and is sure to evolve and make its mark in computer science.</p>
+    		</div>
+    		<div style = "text-align: center">
+    			<h6 style = "color: #1b1b1b"><b>&lt;/end_article&gt;</b></h6>
+    		</div>
+    		<div class = "sources text-center">
+    			<h1>SOURCES</h1>
+    			<a target = "_blank" href="https://www.youtube.com/watch?v=9zfeTw-uFCw">https://www.youtube.com/watch?v=9zfeTw-uFCw</a>
+    			<br><a target = "_blank" href="https://towardsdatascience.com/introduction-to-genetic-algorithms-including-example-code-e396e98d8bf3">https://towardsdatascience.com/introduction-to-genetic-algorithms-including-example-code-e396e98d8bf3</a>
+    		</div>
+    	</div>
+	<!--FOOTER-->
+      <footer class="footer pt-4 mt-4" style = "background: linear-gradient(180deg, #232323, #000000);">
+        <div class = "container-fluid text-center">
+          <p style="font-family: 'Inconsolata'; font-size: 10px; color: #ffffff;"> <em>insert social links</em> </p>
+        </div>
+        <div class="container-fluid text-center p-2">
+          <p style="font-family: 'VT323'; font-size: 20px; color: #ffffff;"> © 2018, northville tech research </p>
+        </div>
+      </footer>
+  </body>
+</html>

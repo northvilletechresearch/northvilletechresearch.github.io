@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Inconsolata|VT323');
 
 .alert-dark {background: linear-gradient(to right, #000000, #434343); border-color: #000000; border-width: 2px;}
-.alert-dark h1 {font-family: 'VT323'; font-size: 70px; color: #ffffff}
+.alert-dark h1 {font-family: 'VT323'; font-size: 300%; color: #ffffff}
+.alert-dark p {font-family: 'Inconsolata'; font-size: 100%; color: #ffffff; line-height: 15px;}
 
 .card-article { background-repeat: no-repeat; background-size: cover; margin-bottom: 5%}
 .card-article:hover h1 {font-family: 'VT323'; font-size: 50px; color: #e1e1e1}
@@ -23,7 +24,13 @@
 .card-home:hover i {color: #000000; font-size: 5em}
 .card-home:hover hr {border: 1.5px solid #000000;}
 
+.article { text-align: justify; }
+.article p { font-family: "Verdana"; font-size: 15px; color: #2b2b2b; }
+.article b { font-family: 'Inconsolata', monospace; font-size: 15px; color: #2b2b2b;}
 
+.sources h1 { font-size: 50px; font-family: 'VT323', monospace; color: #1b1b1b}
+.sources a {font-size: 10px; font-family: 'VT323', monospace; color: blue;}
+.sources a:hover {color: #e1e1e1; text-decoration: none;}
 
 a {font-family: 'VT323', monospace; color: #ffffff;}
 a:hover {color: #e1e1e1; text-decoration: none;}
